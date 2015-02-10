@@ -1,0 +1,68 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #000;
+  font-size: 24pt;
+  font-family: sans-serif;
+}
+body {
+  overflow: hidden;
+}
+#page {
+  margin: 24px;
+}
+#page h1 {
+  font-size: 16pt;
+  font-weight: normal;
+  text-align: right;
+}
+#distance {
+  position: relative;
+  font-size: 100vw;
+  height: 100px;
+  outline: 1px #fff solid;
+}
+#earth {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.016129032258064em;
+  width: 0.032258064516129em;
+  height: 0.032258064516129em;
+  border-radius: 0.032258064516129em;
+  left: 0;
+  background-color: #008000;
+}
+#moon {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.003472222222222em;
+  width: 0.006944444444444em;
+  height: 0.006944444444444em;
+  border-radius: 0.006944444444444em;
+  right: 0;
+  background-color: #ffffe0;
+}
+#track {
+  position: absolute;
+  top: 50%;
+  left: 0.032258064516129em;
+  right: 0.006944444444444em;
+  height: 1px;
+  background-color: #008000;
+}
+#track #progress {
+  display: inline-block;
+  width: 0.6128205128205%;
+  height: 1px;
+  background-color: #f00;
+  vertical-align: top;
+  font-size: 11pt;
+}
+#track span {
+  vertical-align: top;
+  font-size: 11pt;
+}
