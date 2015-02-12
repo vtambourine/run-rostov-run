@@ -29,28 +29,36 @@ body {
 #earth {
   position: absolute;
   top: 50%;
-  margin-top: -0.016129032258064em;
-  width: 0.032258064516129em;
-  height: 0.032258064516129em;
-  border-radius: 0.032258064516129em;
+  margin-top: -16.573881373569em;
+  width: 33.147762747138em;
+  height: 33.147762747138em;
+  border-radius: 33.147762747138em;
   left: 0;
   background-color: #00f;
+  transform: scale(0.001);
+  -ms-transform: scale(0.001);
+  transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
 }
 #moon {
   position: absolute;
   top: 50%;
-  margin-top: -0.005em;
-  width: 0.01em;
-  height: 0.01em;
-  border-radius: 0.01em;
+  margin-top: -16.573881373569em;
+  width: 33.147762747138em;
+  height: 33.147762747138em;
+  border-radius: 33.147762747138em;
   right: 0;
   background-color: #ffffe0;
+  transform: scale(0.000272720138126);
+  -ms-transform: scale(0.000272720138126);
+  transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
 }
 #track {
   position: absolute;
   top: 50%;
-  left: 0.032258064516129em;
-  right: 0.01em;
+  left: 0.033147762747138em;
+  right: 0.009040062434964em;
   height: 1px;
   background-color: #008000;
 }

@@ -1,4 +1,16 @@
-unit = 1em
+unit = 10em
+earth-to-moon-distance = 384400
+earth-diameter = 12742
+moon-diameter = 3475
+
+precise-zoom = 0.001
+
+earth-factor-size = (earth-diameter / earth-to-moon-distance / precise-zoom)
+moon-factor-size = (moon-diameter / earth-to-moon-distance / precise-zoom)
+
+scale-unit = unit(earth-factor-size, 'em')
+moon-scale-factor = (moon-factor-size / earth-factor-size)
+
 planet-size(value)
 	min-value = 0.01em
 	if value < min-value
@@ -37,29 +49,37 @@ body
 	height: 100px
 	border: 1px solid white
 
-planet(name)
+planet()
 	position: absolute
 	top: 50%
-	margin-top: -(planets[name]/2)
-	width: planets[name]
-	height: planets[name]
-	border-radius: planets[name]
+	margin-top: -(scale-unit/2)
+	width: scale-unit
+	height: scale-unit
+	border-radius: scale-unit
 
 #earth
-	planet('earth')
+	planet()
 	left: 0
 	background-color: blue
+	transform: scale(precise-zoom)
+	-ms-transform: scale(precise-zoom)
+	transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
 
 #moon
-	planet('moon')
+	planet()
 	right: 0
 	background-color: lightyellow
+	transform: scale(moon-scale-factor * precise-zoom)
+	-ms-transform: scale(moon-scale-factor * precise-zoom)
+	transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
 
 #track
 	position: absolute
 	top: 50%
-	left: planets.earth
-	right: planets.moon
+	left: scale-unit * precise-zoom
+	right: scale-unit * moon-scale-factor * precise-zoom
 	height: 1px
 	background-color: green
 
