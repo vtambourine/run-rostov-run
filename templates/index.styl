@@ -1,4 +1,5 @@
-unit = 10em
+@import 'build/*'
+
 earth-to-moon-distance = 384400
 earth-diameter = 12742
 moon-diameter = 3475
@@ -17,11 +18,6 @@ planet-size(value)
 		min-value
 	else
 		value
-
-planets = {
-	earth: planet-size(unit / 31),
-	moon: planet-size(unit / 144)
-}
 
 body, html
 	width: 100%
@@ -95,7 +91,7 @@ planet()
 
 	#progress
 		display: inline-block
-		width: (2390/390000*100)%
+		width: (passed / earth-to-moon-distance * 100)%
 		height: 1px
 		background-color: red
 		vertical-align: top

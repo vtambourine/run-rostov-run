@@ -1,0 +1,23 @@
+{
+  "name": "earth-to-moon",
+  "version": "0.0.0",
+  "author": "Benjamin Tambourine <vtambourine@ya.ru>",
+  "description": "",
+  "homepage": "https://github.com/vtambourine/run-rostov-run"
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-clean": "^0.3.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-download": "0.0.1",
+    "gulp-file": "^0.2.0",
+    "gulp-insert": "^0.4.0",
+    "gulp-jade": "^0.11.0",
+    "gulp-stylus": "^2.0.0",
+    "minimist": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtambourine/run-rostov-run.git"
+  },
+  "license": "ISC"
+}
