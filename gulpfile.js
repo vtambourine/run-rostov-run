@@ -29,7 +29,7 @@ gulp.task('templates', ['cell-value'], function() {
         .pipe(jade({
             locals: {
                 passed: value,
-                left: 384400 - parseFloat(value, 10)
+                left: 384400 - value
             }
         }))
         .pipe(gulp.dest(BUILD_DEST))
@@ -45,7 +45,7 @@ gulp.task('spreadsheet-cell', function () {
 
 gulp.task('cell-value', ['spreadsheet-cell'], function () {
     var cell = fs.readFileSync(path.join(__dirname, BUILD_DEST, 'cell.json'), 'utf8');
-    value = JSON.parse(cell).entry.content.$t.replace(',', '.');
+    value = parseInt(JSON.parse(cell).entry.content.$t);
     file('variables.styl', 'passed = ' + value, {src:true})
         .pipe(gulp.dest(BUILD_DEST));
 });
