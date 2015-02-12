@@ -24,6 +24,7 @@ body {
   position: relative;
   font-size: 100vw;
   height: 100px;
+  border: 1px solid #fff;
 }
 #earth {
   position: absolute;
@@ -38,10 +39,10 @@ body {
 #moon {
   position: absolute;
   top: 50%;
-  margin-top: -0.003472222222222em;
-  width: 0.006944444444444em;
-  height: 0.006944444444444em;
-  border-radius: 0.006944444444444em;
+  margin-top: -0.005em;
+  width: 0.01em;
+  height: 0.01em;
+  border-radius: 0.01em;
   right: 0;
   background-color: #ffffe0;
 }
@@ -49,7 +50,7 @@ body {
   position: absolute;
   top: 50%;
   left: 0.032258064516129em;
-  right: 0.006944444444444em;
+  right: 0.01em;
   height: 1px;
   background-color: #008000;
 }
