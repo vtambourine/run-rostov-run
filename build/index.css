@@ -24,7 +24,6 @@ body {
   position: relative;
   font-size: 100vw;
   height: 100px;
-  outline: 1px #fff solid;
 }
 #earth {
   position: absolute;
@@ -34,7 +33,7 @@ body {
   height: 0.032258064516129em;
   border-radius: 0.032258064516129em;
   left: 0;
-  background-color: #008000;
+  background-color: #00f;
 }
 #moon {
   position: absolute;
@@ -61,8 +60,16 @@ body {
   background-color: #f00;
   vertical-align: top;
   font-size: 11pt;
+  float: left;
 }
-#track span {
+#track #progress-label {
+  display: inline;
+  position: relative;
+  top: 16px;
   vertical-align: top;
   font-size: 11pt;
+  padding-top: 12px;
+  padding-left: 5px;
+  border-left: 1px solid #fff;
+  float: left;
 }

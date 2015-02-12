@@ -29,7 +29,6 @@ body
 	position relative
 	font-size: 100vw
 	height: 100px
-	outline: 1px white solid
 
 planet(name)
 	position: absolute
@@ -42,7 +41,7 @@ planet(name)
 #earth
 	planet('earth')
 	left: 0
-	background-color: green
+	background-color: blue
 
 #moon
 	planet('moon')
@@ -64,6 +63,14 @@ planet(name)
 		background-color: red
 		vertical-align: top
 		font-size: 11pt
-	span
+		float: left
+	#progress-label
+		display:inline
+		position: relative
+		top: 16px;
 		vertical-align: top
 		font-size: 11pt
+		padding-top: 12px;
+		padding-left: 5px;
+		border-left: 1px solid white
+		float: left
