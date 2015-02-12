@@ -1,5 +1,3 @@
-- var runned = 2345
-
 doctype html
 html
 	head
@@ -9,17 +7,18 @@ html
 
 	body
 		#page
-			h1 Ростов бежит до Луны
-			p.
-				Клуб любителей бега Беги, Ростов, Беги
+			#description
+				h1 Ростов бежит до Луны
+				p Клуб любителей бега <a class="facebook" href="https://www.facebook.com/groups/runrostov">«Беги, Ростов, Беги»</a> бежит до Луны.
+				p Каждый километр, который мы пробежали, проплыти или проехали на велосипеде, делает нас чуть ближе к цели.
 			include d.jade
 			#distance
 				#earth
 				#track
 					#progress
 					#progress-label.
-						Мы уже вот тут. #{x}<br>
-						Пробежали #{runned} километров<br>
-						и ВВВ осталось.
+						Мы уже вот тут.<br>
+						Пробежали #{passed} километров<br>
+						и #{left} осталось.
 
 				#moon
