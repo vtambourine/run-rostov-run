@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "author": "Benjamin Tambourine <vtambourine@ya.ru>",
   "description": "",
-  "homepage": "https://github.com/vtambourine/run-rostov-run"
+  "homepage": "https://github.com/vtambourine/run-rostov-run",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-clean": "^0.3.1",
