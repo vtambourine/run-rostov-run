@@ -69,8 +69,10 @@ planet()
 	background-color: blue
 	transform: scale(precise-zoom)
 	-ms-transform: scale(precise-zoom)
+	-webkit-transform: scale(precise-zoom)
 	transform-origin: 0 50%;
 	-ms-transform-origin: 0 50%;
+	-webkit-transform-origin: 0 50%;
 
 #moon
 	planet()
@@ -78,8 +80,10 @@ planet()
 	background-color: lightyellow
 	transform: scale(moon-scale-factor * precise-zoom)
 	-ms-transform: scale(moon-scale-factor * precise-zoom)
+	-webkit-transform: scale(moon-scale-factor * precise-zoom)
 	transform-origin: 100% 50%;
 	-ms-transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
 
 #track
 	position: absolute
